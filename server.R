@@ -55,7 +55,7 @@ shinyServer(function(input, output) {
         span("This app was created on ", span(style="font-weight:bold","July 2, 2018.")), br(),
         paste("You are watching it after", timediff(), "Thank you!"))
     }
-    if (input$findButton > 2){
+    else if (input$findButton > 2){
           # If the 'find me' button is clicked more than intended, print something funny.
           div(style="background-color:lightblue",
           span(style="font-weight:bold","Magic can only happen once!"))

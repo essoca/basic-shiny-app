@@ -19,7 +19,7 @@ shinyUI(
   mainPanel(
     leafletOutput("showMap"),
     br(),
-    p("I live in New York City. Do you want to know where I am now?"),
+    p("I live in New York City, specifically in Manhattan, as shown above. Do you want to know where I am now?"),
     actionButton("findButton",'Find me!'),
     p(""),
     htmlOutput("text")
